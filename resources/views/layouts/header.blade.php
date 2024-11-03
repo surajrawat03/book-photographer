@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{{route('home')}}">
             <img src="{{ asset('images/logo.png') }}" alt="SnapCapture Logo" height="40">
             <span class="h4 font-weight-bolder theme-color">SnapCapture</span>
         </a>
@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto header-menu">
                 <li class="nav-item">
-                    <a class="header-menu-item nav-link selected" href="#">Book Photographer</a>
+                    <a class="header-menu-item nav-link selected" href="{{route('home')}}">Book Photographer</a>
                 </li>
                 <li class="nav-item">
                     <a class="header-menu-item nav-link" href="#">Quick Booking</a>
@@ -24,10 +24,10 @@
             </ul>
             <ul class="navbar-nav ml-auto header-menu">
                 <li class="nav-item">
-                    <a class="header-menu-item nav-link" href="#"><i class="fas fa-sign-in-alt mr-1"></i>Login</a>
+                    <a class="header-menu-item nav-link" href="{{route('login')}}"><i class="fas fa-sign-in-alt mr-1"></i>Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="header-menu-item nav-link" href="#">Register</a>
+                    <a class="header-menu-item nav-link" href="{{route('register')}}">Register</a>
                 </li>
             </ul>
         </div>
